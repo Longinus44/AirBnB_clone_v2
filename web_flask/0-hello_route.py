@@ -1,22 +1,20 @@
 #!/usr/bin/python3
+"""
+A simple Flask web application module.
+"""
+
 from flask import Flask
 
-"""
-This Flask application creates a simple web server that listens on all interfaces (0.0.0.0)
-and port 5000. It defines a route for the root URL (`/`) and displays the message "Hello HBNB!"
-"""
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def hello():
+def hello_hbnb():
     """
-    This function handles requests to the root URL (`/`).
-
-    Returns:
-        str: The message "Hello HBNB!"
+    Route handler for the root URL.
+    Returns a greeting message "Hello HBNB!".
     """
-    return f'Hello HBNB!'
+    return "Hello HBNB!"
 
 
 if __name__ == '__main__':
