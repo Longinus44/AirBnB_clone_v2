@@ -44,7 +44,7 @@ def route_text(text):
       with underscores replaced by spaces.
     If no text is provided, defaults to 'is cool'.
     """
-    return f"python " + text.replace('_', ' ')
+    return f"Python " + text.replace('_', ' ')
 
 
 if __name__ == '__main__':
